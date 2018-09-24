@@ -1,3 +1,8 @@
+/*LeetCode unlocked question:
+Q - 161
+Given two strings S and T, determine if they are both one edit distance apart.
+*/
+
 #include<iostream>
 #include<stdio.h>
 #include<string>
