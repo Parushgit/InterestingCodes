@@ -1,4 +1,4 @@
-/*LeetCode unlocked question:
+/*LeetCode locked question: (Uber)
 Q - 161
 Given two strings S and T, determine if they are both one edit distance apart.
 */
