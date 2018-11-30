@@ -25,9 +25,8 @@ bool dfs(int source, vector<bool>& visited, vector<bool>& recStack) {
         vector<int>::iterator it;
         for(it = graph[source].begin(); it != graph[source].end(); it++) {
             // If not visited then visit
-            if(visited[*it] == false) {
-                if(dfs(*it, visited, recStack))
-                    return true;
+            if(visited[*it] == false && dfs(*it, visited, recStack)) {
+                return true;
             }
             else if(recStack[*it] == true)
                 return true; 
