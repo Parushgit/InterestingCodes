@@ -1,0 +1,57 @@
+- If we have got just TreeNode* root and it has so many children. How do you build the adjacency list?
+
+```
+void buildGraph(Node* root, unordered_map<Node*, vector<Node*>>& graph) {
+    if (root == NULL)
+        return;
+
+    for (auto vec: root->children) {
+        graph[root].push_back(vec);
+        graph[vec].push_back(root);
+        buildGraph(vec, graph);
+    }
+    return;
+}
+```
+
+- Fill the set;
+
+```
+return nums.size() > set<int>(nums.begin(), nums.end()).size();
+
+```
+
+- Tree Traversals;
+
+(a) Inorder (Left, Root, Right) : 4 2 5 1 3 
+(b) Preorder (Root, Left, Right) : 1 2 4 5 3 
+(c) Postorder (Left, Right, Root) : 4 5 2 3 1
+
+- Tokens in C++;
+
+        istringstream ss(data);
+        string token;
+        while(getline(ss, token, ','))
+            tokens.push_back(token);
+            
+            
+- USe cases of Trie;
+
+```
+This article introduces the data structure trie. It could be pronounced in two different ways: as "tree" or "try". 
+Trie which is also called a digital tree or a prefix tree is a kind of search ordered tree data structure mostly used for the efficient dynamic add/search operations with the strings.
+Trie is widely used in real life: autocomplete search, spell checker, T9 predictive text, IP routing (longest prefix matching), some GCC containers.
+
+Against hashmap();
+Finding all keys with a common prefix.
+
+Enumerating a dataset of strings in lexicographical order.
+
+Scaling for the large datasets. Once the hash table increases in size, there are a lot of hash collisions and the search time complexity could degrade to \mathcal{O}(N^2 \cdot M)O(N 
+2
+ ⋅M), where NN is the number of the inserted keys.
+
+Trie could use less space compared to hashmap when storing many keys with the same prefix. In this case, using trie has only \mathcal{O}(M \cdot N)O(M⋅N) time complexity, where MM is the key length, and NN is the number of keys.
+```
+
+
