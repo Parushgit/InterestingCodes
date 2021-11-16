@@ -55,3 +55,5 @@ Trie could use less space compared to hashmap when storing many keys with the sa
 ```
 
 
+- Sorting using comparator;
+sort(intervals.begin(), intervals.end(), [](vector<int> interval1, vector<int> interval2) { return interval1[0] < interval2[0]; });
