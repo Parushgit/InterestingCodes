@@ -100,4 +100,7 @@ struct comparator {
 
 - Make pair;
 make_pair (10,20);
-    
+
+
+- Sort with lambda function
+sort(T.begin(), T.end(), [&](char a, char b) { return vec[a - 'a'] < vec[b - 'a']; });
