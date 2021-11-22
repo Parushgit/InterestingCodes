@@ -104,3 +104,7 @@ make_pair (10,20);
 
 - Sort with lambda function
 sort(T.begin(), T.end(), [&](char a, char b) { return vec[a - 'a'] < vec[b - 'a']; });
+
+
+- If any substring is required after a particular character, then?
+path.substr(path.find_last_of('/') + 1)
