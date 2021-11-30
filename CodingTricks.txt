@@ -113,3 +113,11 @@ path.substr(path.find_last_of('/') + 1)
 ------ Always remember to find the shortest path via BFS, remember to make a use of visited boolesn.
 
 
+Which approach to choose, BFS or DFS?
+
+The problem is to return a list of last elements from all levels, so it's the way more natural to implement BFS here.
+
+Time complexity is the same \mathcal{O}(N)O(N) both for DFS and BFS since one has to visit all nodes.
+
+Space complexity is \mathcal{O}(H)O(H) for DFS and
+\mathcal{O}(D)O(D) for BFS, where HH is a tree height, and DD is a tree diameter. They both result in \mathcal{O}(N)O(N) space in the worst-case scenarios: skewed tree for DFS and complete tree for BFS.
