@@ -121,3 +121,10 @@ Time complexity is the same \mathcal{O}(N)O(N) both for DFS and BFS since one ha
 
 Space complexity is \mathcal{O}(H)O(H) for DFS and
 \mathcal{O}(D)O(D) for BFS, where HH is a tree height, and DD is a tree diameter. They both result in \mathcal{O}(N)O(N) space in the worst-case scenarios: skewed tree for DFS and complete tree for BFS.
+
+
+
+
+
+// In order to insert elements into vector from beginning;
+result.insert(result.begin(), pq.top().first);
