@@ -128,3 +128,9 @@ Space complexity is \mathcal{O}(H)O(H) for DFS and
 
 // In order to insert elements into vector from beginning;
 result.insert(result.begin(), pq.top().first);
+
+
+
+
+// DFS TC
+Simple traversing of nodes using DFS gives O(V+E). This DFS prints all possible paths. Hence its worst time can be O(VE), best case can be O(V+E)
