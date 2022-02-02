@@ -134,3 +134,9 @@ result.insert(result.begin(), pq.top().first);
 
 // DFS TC
 Simple traversing of nodes using DFS gives O(V+E). This DFS prints all possible paths. Hence its worst time can be O(VE), best case can be O(V+E)
+
+
+
+// Convert character to string
+- string str(1, c);
+- str.push_back(c);
