@@ -140,3 +140,7 @@ Simple traversing of nodes using DFS gives O(V+E). This DFS prints all possible 
 // Convert character to string
 - string str(1, c);
 - str.push_back(c);
+
+
+// Priority_queue filling
+priority_queue<int> pq(begin(stones), end(stones));
