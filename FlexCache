@@ -1,0 +1,11 @@
+Hi,
+
+ 
+
+FlexCache® software scale out storage performance for read-heavy workloads. By caching only the data accessed, rather than entire volumes or files, FlexCache software:
+
+1. Eliminates performance bottlenecks for read-intensive applications,even for multiple clients across multiple nodes    in a cluster, by enabling primary volumes under heavy load to be cached across the    cluster
+2. Boosts storage efficiency and cost effectiveness by eliminating the need to provision for peak loads
+3. Caches and serves hot datasets from anywhere in your clusterfor compute-intensive applications such as movie   rendering, chip-design, seismic analysis,and financial-markets simulation
+
+FlexCache software can be added to existing FAS or V-Series systems running the clustered Data ONTAP® OS using NFSv3/4 or SMB 1.0/2.0/3.0.
