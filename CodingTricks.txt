@@ -144,3 +144,6 @@ Simple traversing of nodes using DFS gives O(V+E). This DFS prints all possible 
 
 // Priority_queue filling
 priority_queue<int> pq(begin(stones), end(stones));
+
+// Modulus
+int mod = 1e9 +7;
