@@ -147,3 +147,12 @@ priority_queue<int> pq(begin(stones), end(stones));
 
 // Modulus
 int mod = 1e9 +7;
+
+// Generate all the substrings;
+O(N3)
+void substrings(string s) {
+for(int i = 0; i < s.length(); i++) {
+    for(int j = 1; j <= s.length() - i; j++) {
+        s.substr(i, j);
+    }
+}
