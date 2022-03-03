@@ -156,3 +156,6 @@ for(int i = 0; i < s.length(); i++) {
         s.substr(i, j);
     }
 }
+
+// Sorting custom order syntax
+sort(T.begin(), T.end(), [&](char a, char b) { return vec[a - 'a'] < vec[b - 'a']; });
