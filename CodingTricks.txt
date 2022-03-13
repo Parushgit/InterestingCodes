@@ -159,3 +159,17 @@ for(int i = 0; i < s.length(); i++) {
 
 // Sorting custom order syntax
 sort(T.begin(), T.end(), [&](char a, char b) { return vec[a - 'a'] < vec[b - 'a']; });
+
+// Binary search;
+arr = [1,2,3,3,4,5,6];
+x = 2
+lower_bound(arr.begin(), arr.end(), x) - arr.begin() ------> index 1;
+x = 7
+lower_bound(arr.begin(), arr.end(), 7) - arr.begin() ------> index 7 outside of vector;
+lower_bound will give the first index of the element found
+
+x = 4
+upper_bound(arr.begin(), arr.end(), x) - arr.begin() ----> next index which is 5
+x = 3
+upper_bound(arr.begin(), arr.end(), x) - arr.begin() ----> next index which is 4
+lower_bound will give the next index of the element found
