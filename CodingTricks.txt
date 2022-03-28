@@ -176,3 +176,7 @@ lower_bound will give the next index of the element found
 
 String comparison
 a.compare(b) = 0 if it matches. < 0 if lesser of length of a < length of b. > 0 opposite of lesser
+
+
+typedef pair<int, int> pi;
+
