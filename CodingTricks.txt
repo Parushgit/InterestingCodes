@@ -180,3 +180,11 @@ a.compare(b) = 0 if it matches. < 0 if lesser of length of a < length of b. > 0 
 
 typedef pair<int, int> pi;
 
+
+static bool comparator(const pair<string, int>& a1, const pair<string, int>& a2) {
+    return a1.second < a2.second;
+}
+
+sort(words.begin(), words.end(), comparator);
+
+
