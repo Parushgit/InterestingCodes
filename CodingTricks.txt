@@ -213,3 +213,19 @@ sort(words.begin(), words.end(), comparator);
 #include <future>
 
 
+
+Custom Comparator in priority_queue
+Likewise, how we passed greater<datatype> an inbuilt comparator, we can also pass a user-defined comparator to priority_queue.
+You should declare a class Compare and overload operator() function.
+class Compare {
+    public:
+       bool operator()(T a, T b){
+           if(cond){
+               return true;
+           }
+           return false;
+      }
+};
+When true is returned, it means the order is correct and NO swapping of elements takes place.
+When false is returned, it means the order is NOT correct and swapping of elements takes place.
+
