@@ -229,3 +229,13 @@ class Compare {
 When true is returned, it means the order is correct and NO swapping of elements takes place.
 When false is returned, it means the order is NOT correct and swapping of elements takes place.
 
+
+/*
+Insert num in sorted vector
+*/
+
+void insertSorted(std::vector<int>& vec, int element) {
+    auto it = std::lower_bound(vec.begin(), vec.end(), element);
+    vec.insert(it, element);
+}
+
