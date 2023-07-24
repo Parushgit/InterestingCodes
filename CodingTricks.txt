@@ -239,3 +239,24 @@ void insertSorted(std::vector<int>& vec, int element) {
     vec.insert(it, element);
 }
 
+
+/*Binary search on vector<vector<int>>*/
+
+std::vector<std::vector<int>> vecOfVec = {
+    {10, 1, 2},
+    {20, 3, 4},
+    {30, 5, 6},
+    {40, 7, 8}
+};
+
+// Sort the vector of vectors based on the first element of each inner vector
+std::sort(vecOfVec.begin(), vecOfVec.end(), [](const std::vector<int>& a, const std::vector<int>& b) {
+    return a[0] < b[0];
+});
+
+int searchValue = 25;
+
+// Use std::lower_bound to find the first element whose first element is not less than the searchValue
+auto it = std::lower_bound(vecOfVec.begin(), vecOfVec.end(), searchValue, [](const std::vector<int>& vec, int val) {
+    return vec[0] < val;
+});
